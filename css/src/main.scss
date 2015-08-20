@@ -38,6 +38,7 @@ header {
 	background: url(../img/bg-header.jpg) center center no-repeat;
 	background-size: cover;
 	border-bottom: 25px solid $navy;
+	overflow: hidden;
 
 	img.header {
 		display: block;
@@ -56,7 +57,7 @@ header {
 		position: absolute;
 		right: -60px;
 		bottom: -3px;
-	}g
+	}
 }
 
 
