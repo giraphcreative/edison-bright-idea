@@ -6,6 +6,7 @@ $teal: #2FB6E4;
 $green: #8B9E74;
 $red: #831528;
 $grey: #414042;
+$navy: #1E376C;
 
 
 @import "reset";
@@ -36,10 +37,25 @@ header {
 	position: relative;
 	background: url(../img/bg-header.jpg) center center no-repeat;
 	background-size: cover;
-	border-bottom: 30px solid $yellow;
+	border-bottom: 25px solid $navy;
 
-	img {
+	img.header {
 		display: block;
+		margin: 20px auto;
+
+		@include respond-to( 600px ) {
+			margin: 50px auto 30px;
+		}
+
+		@include respond-to( 900px ) {
+			margin: 100px auto 70px;
+		}
+	}
+
+	img.car {
+		position: absolute;
+		right: -60px;
+		bottom: -3px;
 	}
 }
 
@@ -57,7 +73,6 @@ header {
 // tool styles
 .tool {
 	padding: 0;
-	text-align: center;
 	
 	@include respond-to( 768px ) {
 		position: relative;
@@ -65,7 +80,7 @@ header {
 	}
 
 	.calculator {
-		background: url(../img/bg-box.png);
+		background: $navy;
 		color: white;
 		padding: 20px 15px 30px;
 		@include font-title;
@@ -132,7 +147,7 @@ header {
 
 // footer styles
 .footer-bar {
-	border-top: 10px solid $teal;
+	border-top: 10px solid $grey;
 	color: $grey;
 	padding: 30px 20px;
 	text-align: center;
