@@ -105,10 +105,11 @@ header {
 	}
 
 	.half.content{
-		padding: 0;
+		padding: 20px 0 0;
 
 		img {
 			display: block;
+			margin: 0 auto;
 		}
 	
 		@include respond-to( 768px ) {
