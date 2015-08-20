@@ -42,14 +42,14 @@ header {
 
 	img.header {
 		display: block;
-		margin: 20px auto;
+		margin: 20px auto 90px;
 
 		@include respond-to( 600px ) {
-			margin: 50px auto 30px;
+			margin: 50px auto 90px;
 		}
 
 		@include respond-to( 900px ) {
-			margin: 100px auto 70px;
+			margin: 100px auto 80px;
 		}
 	}
 
